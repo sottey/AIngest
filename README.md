@@ -10,12 +10,12 @@ The output schema is **richly descriptive**, capturing file structure, metadata,
 
 ## Core Goals
 
-- 🧩 **Multi-format ingestion** — parse and normalize diverse document and code formats.  
-- 📦 **Unified schema output** — produce clean, structured JSON (or XML/SHON) with consistent semantics.  
-- 🧠 **AI interpretability** — design data to be easily understood by LLMs (sections, types, metadata).  
-- 📏 **Token awareness** — estimate token usage per file and total, with model-window guidance.  
-- 🪶 **Lightweight & modular** — pure Go, CLI + library, plug-in friendly architecture.  
-- 🔍 **Provenance & traceability** — retain metadata like relative path, hash, encoding, and file size.
+- **Multi-format ingestion** — parse and normalize diverse document and code formats.  
+- **Unified schema output** — produce clean, structured JSON (or XML/SHON) with consistent semantics.  
+- **AI interpretability** — design data to be easily understood by LLMs (sections, types, metadata).  
+- **Token awareness** — estimate token usage per file and total, with model-window guidance.  
+- **Lightweight & modular** — pure Go, CLI + library, plug-in friendly architecture.  
+- **Provenance & traceability** — retain metadata like relative path, hash, encoding, and file size.
 
 ---
 
