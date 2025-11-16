@@ -1,0 +1,101 @@
+{
+  "version": "1.0",
+  "created_at": "2025-10-24T19:38:05.404575-07:00",
+  "source_dir": ".",
+  "description": "Generated bundle (metadata only)",
+  "files": [
+    {
+      "path": ".gitignore",
+      "relative_path": ".gitignore",
+      "name": ".gitignore",
+      "extension": ".gitignore",
+      "mime_type": "application/octet-stream",
+      "file_type": "binary",
+      "size_bytes": 559,
+      "created_at": "2025-10-24T18:29:00.946046931-07:00",
+      "modified_at": "2025-10-24T18:29:00.946046931-07:00",
+      "token_count": 0
+    },
+    {
+      "path": "LICENSE",
+      "relative_path": "LICENSE",
+      "name": "LICENSE",
+      "extension": "",
+      "mime_type": "application/octet-stream",
+      "file_type": "binary",
+      "size_bytes": 1072,
+      "created_at": "2025-10-24T18:29:34.465645784-07:00",
+      "modified_at": "2025-10-24T18:29:34.465645784-07:00",
+      "token_count": 0
+    },
+    {
+      "path": "README.md",
+      "relative_path": "README.md",
+      "name": "README.md",
+      "extension": ".md",
+      "mime_type": "text/markdown",
+      "file_type": "text",
+      "size_bytes": 7509,
+      "created_at": "2025-10-24T18:29:00.946363553-07:00",
+      "modified_at": "2025-10-24T18:29:00.946363553-07:00",
+      "token_count": 0
+    },
+    {
+      "path": "aingest",
+      "relative_path": "aingest",
+      "name": "aingest",
+      "extension": "",
+      "mime_type": "application/octet-stream",
+      "file_type": "binary",
+      "size_bytes": 4021570,
+      "created_at": "2025-10-24T19:37:02.860217-07:00",
+      "modified_at": "2025-10-24T19:37:02.860217-07:00",
+      "token_count": 0
+    },
+    {
+      "path": "go.mod",
+      "relative_path": "go.mod",
+      "name": "go.mod",
+      "extension": ".mod",
+      "mime_type": "application/octet-stream",
+      "file_type": "binary",
+      "size_bytes": 197,
+      "created_at": "2025-10-24T18:42:06.996242492-07:00",
+      "modified_at": "2025-10-24T18:42:06.996242492-07:00",
+      "token_count": 0
+    },
+    {
+      "path": "go.sum",
+      "relative_path": "go.sum",
+      "name": "go.sum",
+      "extension": ".sum",
+      "mime_type": "application/octet-stream",
+      "file_type": "binary",
+      "size_bytes": 898,
+      "created_at": "2025-10-24T18:29:35.344492899-07:00",
+      "modified_at": "2025-10-24T18:29:35.344492899-07:00",
+      "token_count": 0
+    },
+    {
+      "path": "main.go",
+      "relative_path": "main.go",
+      "name": "main.go",
+      "extension": ".go",
+      "mime_type": "text/x-go",
+      "file_type": "code",
+      "size_bytes": 1140,
+      "created_at": "2025-10-24T18:29:34.465150331-07:00",
+      "modified_at": "2025-10-24T18:29:34.465150331-07:00",
+      "token_count": 0
+    }
+  ],
+  "summary": {
+    "total_files": 7,
+    "total_tokens": 0,
+    "total_size": 4032945,
+    "avg_tokens": 0,
+    "largest_file": "",
+    "largest_tokens": 0
+  },
+  "generator": "aingest v0.1.0"
+}

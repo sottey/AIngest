@@ -1,32 +1,77 @@
-# If you prefer the allow list template instead of the deny list, see community template:
-# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
-#
-# Binaries for programs and plugins
+# ============================================
+# Go build artifacts
+# ============================================
+# Binaries (default `go build` output)
 *.exe
 *.exe~
 *.dll
 *.so
 *.dylib
 
-# Test binary, built with `go test -c`
+# Go cache / test output
 *.test
-
-# Code coverage profiles and other test artifacts
 *.out
-coverage.*
-*.coverprofile
-profile.cov
 
-# Dependency directories (remove the comment below to include it)
-# vendor/
+# Build output directories
+bin/
+cmd/*/bin/
+build/
+dist/
 
-# Go workspace file
+# Go workspaces (Go 1.18+)
 go.work
 go.work.sum
 
-# env file
-.env
 
-# Editor/IDE
-# .idea/
-# .vscode/
+# ============================================
+# macOS junk
+# ============================================
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS metadata directories
+__MACOSX/
+
+
+# ============================================
+# Linux junk
+# ============================================
+.Trash-*
+.nfs*
+
+
+# ============================================
+# Editor / IDE junk
+# ============================================
+# VS Code
+.vscode/
+
+# JetBrains GoLand
+.idea/
+
+# Sublime
+*.sublime-workspace
+*.sublime-project
+
+# Vim / NeoVim
+*.swp
+*.swo
+*.swm
+
+# Emacs
+*~
+
+# ============================================
+# Logs / temp files
+# ============================================
+*.log
+*.tmp
+*.cache/
+
+
+# ============================================
+# Your project binary
+# ============================================
+aingest
+aingest*

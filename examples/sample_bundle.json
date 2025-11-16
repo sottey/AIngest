@@ -1,0 +1,73 @@
+{
+  "version": "1.0",
+  "created_at": "2025-10-24T19:05:00Z",
+  "generator": "aingest v0.1.0",
+  "description": "Sample AIngest output combining Markdown and Go code into an AI-ready structured bundle.",
+  "source_dir": "./example_project",
+  "files": [
+    {
+      "relative_path": "README.md",
+      "name": "README.md",
+      "extension": ".md",
+      "mime_type": "text/markdown",
+      "file_type": "text",
+      "encoding": "utf-8",
+      "size_bytes": 923,
+      "hash": "a07e3f8dbb28e083f882cd12f8b25a23b8f91a31",
+      "token_count": 244,
+      "document": {
+        "title": "Example Project",
+        "summary": "A demonstration of how AIngest bundles structured content.",
+        "sections": [
+          {
+            "id": "overview",
+            "type": "paragraph",
+            "heading": "Overview",
+            "content": "This example shows how AIngest combines Markdown and Go source into a unified bundle that AI systems can interpret semantically."
+          },
+          {
+            "id": "features",
+            "type": "list",
+            "heading": "Key Features",
+            "items": [
+              "Multi-format ingestion (Markdown, code, text)",
+              "Token awareness for model compatibility",
+              "Preserves metadata for context and provenance"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "relative_path": "main.go",
+      "name": "main.go",
+      "extension": ".go",
+      "mime_type": "text/x-go",
+      "file_type": "code",
+      "language": "go",
+      "size_bytes": 254,
+      "hash": "f2c4d33a94b57a3a6e317b41e9b890b50f971a8b",
+      "token_count": 62,
+      "document": {
+        "title": "main.go",
+        "sections": [
+          {
+            "id": "main",
+            "type": "code",
+            "language": "go",
+            "content": "package main\n\nimport \"github.com/sottey/aingest/cmd\"\n\nfunc main() {\n    cmd.Execute()\n}"
+          }
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "total_files": 2,
+    "total_tokens": 306,
+    "avg_tokens": 153,
+    "total_size": 1177,
+    "largest_file": "README.md",
+    "largest_tokens": 244,
+    "estimated_model": "gpt-4o-mini"
+  }
+}

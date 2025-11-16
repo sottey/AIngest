@@ -1,5 +1,4 @@
-The MIT License (MIT)
-
+/*
 Copyright © 2025 sottey
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -19,3 +18,45 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+*/
+package cmd
+
+import (
+	"encoding/json"
+	"fmt"
+	"os"
+
+	"github.com/spf13/cobra"
+)
+
+var infoCmd = &cobra.Command{
+	Use:   "info [bundle.json]",
+	Short: "Display summary information about a bundle",
+	Args:  cobra.ExactArgs(1),
+	Run: func(cmd *cobra.Command, args []string) {
+		filePath := args[0]
+		data, err := os.ReadFile(filePath)
+		if err != nil {
+			fmt.Printf("Error reading file: %v\n", err)
+			return
+		}
+
+		var bundle map[string]interface{}
+		if err := json.Unmarshal(data, &bundle); err != nil {
+			fmt.Printf("Error parsing JSON: %v\n", err)
+			return
+		}
+
+		if summary, ok := bundle["summary"]; ok {
+			fmt.Println("Bundle Summary:")
+			jsonSummary, _ := json.MarshalIndent(summary, "", "  ")
+			fmt.Println(string(jsonSummary))
+		} else {
+			fmt.Println("No summary found in bundle.")
+		}
+	},
+}
+
+func init() {
+	rootCmd.AddCommand(infoCmd)
+}

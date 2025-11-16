@@ -1,5 +1,4 @@
-The MIT License (MIT)
-
+/*
 Copyright © 2025 sottey
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -19,3 +18,31 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+*/
+package cmd
+
+import (
+	"fmt"
+	"os"
+
+	"github.com/spf13/cobra"
+)
+
+var version = "0.1.0"
+
+var rootCmd = &cobra.Command{
+	Use:   "aingest",
+	Short: "AIngest — AI-Ready Document Ingestion Framework",
+	Long:  `AIngest ingests files of multiple formats and produces structured, AI-friendly JSON bundles with metadata and token awareness.`,
+	Run: func(cmd *cobra.Command, args []string) {
+		fmt.Println("AIngest CLI — use 'aingest --help' to see available commands.")
+	},
+}
+
+// Execute starts the CLI
+func Execute() {
+	if err := rootCmd.Execute(); err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
+}
